@@ -3,6 +3,7 @@
   "homepage": "https://xivv.github.io/ferien/",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "angular-cli-ghpages -d dist/ferien/ --no-silent",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
