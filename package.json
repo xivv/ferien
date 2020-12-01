@@ -1,5 +1,6 @@
 {
   "name": "ferien",
+  "homepage": "https://xivv.github.io/ferien/",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
