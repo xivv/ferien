@@ -1,0 +1,25 @@
+<div class="columns">
+    <div class="column grusscontainer">
+        <figure class="image is-16by9">
+            <img src="../../assets/bg.jpg">
+        </figure>
+        <h2 class="title gruss is-2">Herzlich willkommen bei "Ferienhäuser am Hungerberg" in Marienmünster-Vörden</h2>
+    </div>
+</div>
+<div class="columns">
+    <div class="column card" *ngFor="let house of houseService.houses">
+        <h1 class="title">{{house.name}}</h1>
+        <br>
+        <figure class="image is-4by3">
+            <img src="../../assets/Aussenansicht Schnee.JPG">
+        </figure>
+        <br>
+        <div class="">
+            <i *ngIf="house.hasWifi" class="fas fa-lg fa-wifi" data-tooltip="Tooltip Text"></i>
+            <i *ngIf="house.hasShower" class="fas fa-lg fa-shower" data-tooltip="Tooltip Text"></i>
+            <i *ngIf="house.allowsPets" class="fas fa-lg fa-dog" data-tooltip="Tooltip Text"></i>
+        </div>
+        <br>
+        <a (click)="GoTo(house.name)" class="button">Beschreibung</a>
+    </div>
+</div>

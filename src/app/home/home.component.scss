@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(40, 113, 62);
+    color: white;
+}
+
+i {
+    margin: 5px;
+}
+
+.grusscontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card:hover {
+    background-color: rgb(40, 113, 62, 0.1);
+}
+
+.gruss {
+    background-color: rgb(40, 113, 62, 0.7);
+    padding: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
