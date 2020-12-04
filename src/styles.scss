@@ -1,3 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bulma/bulma.sass";
 @import "../node_modules/@creativebulma/bulma-divider/dist/bulma-divider.css";
+
+
+
+@font-face {
+    font-family: kenyanCoffe;
+    src: url("../src/assets/fonts/kenyan\ coffee\ rg.ttf");
+}
+
+@font-face {
+    font-family: oranien;
+    src: url("../src/assets/fonts/Oranienbaum.ttf");
+}
+
+@font-face {
+    font-family: linux;
+    src: url("../src/assets/fonts/LinLibertine_aDRS.ttf");
+}
+
+.linux {
+    font-family: linux;
+    font-size: 18px;
+}
+
+.oranien {
+    font-family: oranien;
+}

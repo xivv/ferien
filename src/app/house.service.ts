@@ -12,56 +12,10 @@ export class HouseService {
     hasWifi: true,
     hasShower: true,
     allowsPets: true,
-    sparsaison: {
-      p2: 36,
-      p34: 38,
-      p56: 90,
-      p78: 100
-    },
-    vorsaison: {
-      p2: 36,
-      p34: 38,
-      p56: 90,
-      p78: 100
-    },
-    hauptsaison: {
-      p2: 36,
-      p34: 38,
-      p56: 90,
-      p78: 100
-    }
-  },
-  {
-    name: 'Sieben Zwerge B',
-    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    hasWifi: true,
-    hasShower: true,
-    allowsPets: true,
-    sparsaison: {
-      p2: 36,
-      p34: 38,
-      p56: 90,
-      p78: 100
-    },
-    vorsaison: {
-      p2: 36,
-      p34: 38,
-      p56: 90,
-      p78: 100
-    },
-    hauptsaison: {
-      p2: 36,
-      p34: 38,
-      p56: 90,
-      p78: 100
-    }
-  },
-  {
-    name: 'Schneeweißchen',
-    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    hasWifi: true,
-    hasShower: true,
-    allowsPets: false,
+    area: 65,
+    maxPersons: 7,
+    bathrooms: 1,
+    bedrooms: 3,
     sparsaison: {
       p2: 36,
       p34: 38,
@@ -84,31 +38,7 @@ export class HouseService {
 
   public getByName(name: string): Ferienhaus {
 
-    let house: Ferienhaus = {
-      name: 'No Data',
-      description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-      hasWifi: true,
-      hasShower: true,
-      allowsPets: true,
-      sparsaison: {
-        p2: 36,
-        p34: 38,
-        p56: 90,
-        p78: 100
-      },
-      vorsaison: {
-        p2: 36,
-        p34: 38,
-        p56: 90,
-        p78: 100
-      },
-      hauptsaison: {
-        p2: 36,
-        p34: 38,
-        p56: 90,
-        p78: 100
-      }
-    };
+    let house: Ferienhaus = this.houses[0];
 
     this.houses.forEach(element => {
 
@@ -120,5 +50,8 @@ export class HouseService {
     return house;
   }
 
-  constructor() { }
+  constructor() {
+    this.houses[1] = this.houses[0];
+    this.houses[2] = this.houses[0];
+  }
 }

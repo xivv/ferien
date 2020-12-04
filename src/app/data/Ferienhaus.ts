@@ -10,4 +10,9 @@ export interface Ferienhaus {
     sparsaison: Price;
     vorsaison: Price;
     hauptsaison: Price;
+
+    area: number;
+    maxPersons: number;
+    bathrooms: number;
+    bedrooms: number;
 }

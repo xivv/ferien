@@ -5,3 +5,20 @@
 .navbar-item {
     color: white;
 }
+
+.navbar-item:hover {
+    background-color: white !important;
+}
+
+.navbar-menu {
+    background-color: rgb(40, 113, 62);
+}
+
+.navbar-burger {
+    color: white;
+}
+
+.fa-phone-square-alt {
+    vertical-align: middle;
+    font-size: 25px;
+}

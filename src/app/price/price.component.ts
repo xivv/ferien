@@ -6,7 +6,7 @@ import { Price } from '../data/Price';
   templateUrl: './price.component.html',
   styleUrls: ['./price.component.scss']
 })
-export class PriceComponent implements OnInit {
+export class PriceComponent {
 
   @Input() sparsaison: Price = {
     p2: 0,
@@ -28,9 +28,5 @@ export class PriceComponent implements OnInit {
   };
 
   constructor() { }
-
-
-  ngOnInit(): void {
-  }
 
 }

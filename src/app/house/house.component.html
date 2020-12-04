@@ -1,59 +1,65 @@
-<h1 class="title">{{house.name}}</h1>
-<h3 class="subtitle">60 m² Ferienwohnung für Max. 4 Gäste (2 Schlafzimmer)</h3>
-<div class="columns">
-    <div class="column">
-        <figure class="image is-4by3">
-            <img src="./../../assets/AussenZwerg.JPG">
-        </figure>
+<div class="card info">
+    <h1 class="title oranien">{{house.name}}</h1>
+    <h3 class="subtitle">60 m² Ferienwohnung für Max. 4 Gäste (2 Schlafzimmer)</h3>
+    <div class="columns">
+        <div class="column">
+            <figure class="image is-4by3">
+                <img src="./../../assets/AussenZwerg.JPG">
+            </figure>
+        </div>
+        <div class="column">
+            <app-price [hauptsaison]="house.hauptsaison" [vorsaison]="house.vorsaison" [sparsaison]="house.sparsaison">
+            </app-price>
+        </div>
     </div>
-    <div class="column">
-        <app-price [hauptsaison]="house.hauptsaison" [vorsaison]="house.vorsaison" [sparsaison]="house.sparsaison">
-        </app-price>
-    </div>
-</div>
-<br>
+    <br>
 
-<div class="card angebot">
-    <div class="card-content">
-        <h6 class="title is-6">Unser Sparangebot für Mai und September 2020</h6>
-        <p> 14 Tage wohnen - 12 Tage zahlen</p>
-        <p>21 Tage wohnen - 18 Tage zahlen</p><br>
-        <h6 class="subtitle">Sie sehen - ein Urlaub bei Ferienhäuser am Hungerberg lohnt sich immer !</h6>
-    </div>
-</div>
-<br>
-<div class="columns">
-    <div class="column">
-        <h3 class="subtitle">Überblick</h3>
-        <div class="content">
-
-            <i class="fa fa-home"></i> &nbsp;50m <br>
-            <i class="fa fa-users"></i>&nbsp;Personen: 5
-
+    <div class="card angebot">
+        <div class="card-content">
+            <h6 class="title is-6">Unser Sparangebot für Mai und September 2020</h6>
+            <p> 14 Tage wohnen - 12 Tage zahlen</p>
+            <p>21 Tage wohnen - 18 Tage zahlen</p><br>
+            <h6 class="subtitle">Sie sehen - ein Urlaub bei Ferienhäuser am Hungerberg lohnt sich immer !</h6>
         </div>
     </div>
-</div>
-<div class="columns">
-    <div class="column">
-        <h3 class="subtitle">Aussttattung</h3>
-        <div class="content">
-            {{house.description}}
+    <br><br> <br>
+    <div class="columns">
+        <div class="column">
+            <h3 class="subtitle divider">Überblick</h3>
+            <div class="content has-text-centered linux">
+                <br>
+                <p><i class="fa fa-home fa-lg"></i> {{house.area}} m² </p>
+                <p> <i class="fa fa-users fa-lg"></i>&nbsp;Personen: {{house.maxPersons}} </p>
+                <p> <i class="fa fa-bed fa-lg"></i>&nbsp;Schlafzimmer: {{house.bedrooms}} &nbsp;&nbsp;&nbsp; </p>
+                <p> <i class="fa fa-bath fa-lg"></i>&nbsp;Badezimmer: {{house.bathrooms}} &nbsp;&nbsp;&nbsp; </p>
+            </div>
         </div>
     </div>
-</div>
-<div class="columns">
-    <div class="column">
-        <h3 class="subtitle">Informationen</h3>
-        <div class="content">
-            {{house.description}}
+    <div class="columns">
+        <div class="column">
+            <h3 class="subtitle divider">Aussttattung</h3>
+            <div class="content linux">
+                {{house.description}}
+            </div>
         </div>
     </div>
-</div>
-<div class="columns">
-    <div class="column">
-        <h3 class="subtitle">Einrichtung</h3>
-        <div class="content">
-            {{house.description}}
+    <br> <br>
+    <div class="columns">
+        <div class="column">
+            <h3 class="subtitle divider">Informationen</h3>
+            <div class="content linux">
+                {{house.description}}
+            </div>
         </div>
     </div>
+    <br> <br>
+    <div class="columns">
+        <div class="column">
+            <h3 class="subtitle divider">Einrichtung</h3>
+            <div class="content linux">
+                {{house.description}}
+            </div>
+        </div>
+    </div>
+    <br> <br>
 </div>
